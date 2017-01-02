@@ -1,5 +1,6 @@
 .site-header {
   background: #FFEAAA;
+
 }
 
 /* DONE: Float the main header to the left, to make room for the
@@ -66,7 +67,7 @@ span{
   text-decoration: none;
 }
 
-/* TODO: Now add styles for how things should look on a larger screen,
+/* Done: Now add styles for how things should look on a larger screen,
    (hint: min is in!):
 @media screen...
          - Hide the hamburger.
@@ -74,3 +75,30 @@ span{
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+@media screen and (min-width: 1000px){
+  .icon-menu {
+    display: none;
+  }
+  .main-nav ul {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .main-nav ul li{
+    float: left;
+    margin:0% 4%;
+    width: 16%;
+  }
+  .heading-group-h1{
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40%;
+  }
+  .heading-group-h1 h1{
+    margin-top: 0px;
+    padding-top: 15px;
+
+  }
+}
